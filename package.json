@@ -1,0 +1,32 @@
+{
+  "name": "facg3-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/scripts/server.js",
+    "watch": "nodemon src/scripts/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facg3/FACG3-Book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facg3/FACG3-Book/issues"
+  },
+  "dependencies": {
+    "env2": "^2.2.0",
+    "pg": "^7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.12.5",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/facg3/FACG3-Book#readme"
+}
