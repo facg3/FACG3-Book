@@ -18,7 +18,7 @@ test('Test-1: getPost Function Test:', (t) => {
         post: 'Test Post Two',
       }, 'Second Row Test Should Pass Correctly.');
       t.deepEqual(res.rows[2], {
-        id: 1,
+        id: 3,
         name: 'Nour',
         post: 'Test Post Three',
       }, 'Third Row Test Should Pass Correctly.');
