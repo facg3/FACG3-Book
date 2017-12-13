@@ -15,9 +15,15 @@ The application works as follows
 
 ## Analysis 
 Case Post
-The system sends a post request from the front-end to the back-end with the data containing the name and the post contents. On the back-end side the system writes to the database using sql
+1. The system sends a post request from the front-end to the back-end with the data containing the name and the post contents
+2. On the back-end side the system writes to the database using sql
+
 Case View
-The system sends a get request from the front-end to the back-end, and the backend transfers the user to the wall page and selects the table containing the related information. And then it displays it properly on the front-end wall page.
+1. The system sends a get request from the front-end to the back-end
+2. and the backend transfers the user to the wall page
+3. select the table containing the related information
+4. display it properly on the front-end wall page
+
 
 ![Heroku app link!](https://facg3-book.herokuapp.com/)
-
+run locally on port 6060
