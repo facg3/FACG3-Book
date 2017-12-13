@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:src": "tape src/tests/tests.js",
+    "test:db": "tape src/db/tests/tests.js",
     "start": "node src/scripts/server.js",
     "watch": "nodemon src/scripts/server.js"
   },
