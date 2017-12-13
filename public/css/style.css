@@ -45,14 +45,14 @@ margin-bottom: 20px;
 
 .post-form{
   background: radial-gradient(ellipse at center, rgb(44, 153, 47) 0%,rgba(53,84,147,1) 100%);
-border:1px solid #2d416d;
-box-shadow: 0 1px #5670A4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
-width: 50%;
-height: 380px;
-margin: 60px auto;
-padding: 50px 30px 0px 30px;
-text-align: center;
+	border:1px solid #2d416d;
+	box-shadow: 0 1px #5670A4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	width: 50%;
+	height: 380px;
+	margin: 60px auto;
+	padding: 50px 30px 0px 30px;
+	text-align: center;
  border-radius: 35px;
 }
 
