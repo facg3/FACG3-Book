@@ -3,24 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>FACG3 Book - Post Area</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon"/>
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
         <ul class="tap-list">
           <a href="#" class="tap-anchor"><li class="tap-body">Home</li></a>
-          <a href="./wall.html" class="tap-anchor"><li class="tap-body">Wall</li></a>
+          <a href="public/wall.html" class="tap-anchor"><li class="tap-body">Wall</li></a>
         </ul>
       </nav>
     </header>
 
-    <form class="post-form" action="Home" method="post">
+    <form class="post-form" action="post_publisher" method="post">
        <input  id="name" type="text" name="name" value="" placeholder="Your Name">
        <textarea  class="textarea" name="post" rows="8" cols="80" placeholder="What do you have in mind?"></textarea>
        <input id="submit" type="submit" name="submit" value="Submit">
 
     </form>
     <footer class="footer"><h3>COPYRIGHT BY Nour , Nadia , Sultan and Hanan</h3></footer>
+    <script type="text/javascript" src="public/js/fetch.js"></script>
+    <script type="text/javascript" src="public/js/dom.js"></script>
   </body>
 </html>

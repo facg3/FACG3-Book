@@ -6,9 +6,9 @@ const router = (req, res) => {
     handlers.HomePage(req, res);
   } else if (endpoint === 'public') {
     handlers.generic(req, res);
-  } else if (endpoint === 'Home') {
+  } else if (endpoint === 'home') {
     handlers.getPosts(req, res);
-  } else if (endpoint === 'Post_Publisher') {
+  } else if (endpoint === 'post_publisher') {
     handlers.addPosts(req, res);
   }
 };
