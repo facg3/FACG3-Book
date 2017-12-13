@@ -6,19 +6,19 @@ test('Test-1: getPost Function Test:', (t) => {
     if (err) {
       t.notOk(err);
     } else {
-      t.equal(res.rows.length, 4, 'Number of rows should be incremented by one.');
-      t.deepEqual(res.rows[0], {
+      t.equal(res.length, 3, 'Number of rows should be incremented by one.');
+      t.deepEqual(res[0], {
         id: 1,
         name: 'Hanan',
         post: 'Test Post One',
       }, 'First Row Test Should Pass Correctly.');
-      t.deepEqual(res.rows[1], {
+      t.deepEqual(res[1], {
         id: 2,
         name: 'Nadia',
         post: 'Test Post Two',
       }, 'Second Row Test Should Pass Correctly.');
-      t.deepEqual(res.rows[2], {
-        id: 1,
+      t.deepEqual(res[2], {
+        id: 3,
         name: 'Nour',
         post: 'Test Post Three',
       }, 'Third Row Test Should Pass Correctly.');
@@ -32,13 +32,19 @@ test('Test-2: addPost Function Test:', (t) => {
     if (err) {
       t.notOk(err);
     } else {
-      t.equal(newData.rows.length, 4, 'Number of Rows Should Equal (4).');
-      t.deepEqual(newData.rows[newData.rows.length - 1], {
-        id: 4,
-        name: 'Sultan',
-        post: 'Test Post Four',
-      }, 'Last Row Should Equal Test Value.');
-      t.end();
+      dbDo.getPost((err2, newData1) => {
+        if (err) {
+          t.notOk(err);
+        } else {
+          t.equal(newData1.length, 4, 'Number of Rows Should Equal (4).');
+          t.deepEqual(newData1[newData1.length - 1], {
+            id: 4,
+            name: 'Sultan',
+            post: 'Test Post Four',
+          }, 'Last Row Should Equal Test Value.');
+          t.end();
+        }
+      });
     }
   });
 });
