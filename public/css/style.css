@@ -108,3 +108,23 @@ margin-left: 0;
 margin-right: 0;
 font-weight: bold;
 }
+.one-post{
+	background-color: #08080b;
+	color: #fff;
+ display:block;
+ padding: 0 3em;
+ line-height: 3em;
+ width:50%;
+ margin-left: 50px;
+ border-radius: 35px;
+ margin-top: 20px;
+}
+.post-publisher{padding-bottom: 10px ;
+	color: #adabc3 ;
+	 border-radius: 35px;
+}
+.post-content{
+	background-color: #adabc3;
+	padding: 20px;
+	 border-radius: 35px;
+}
