@@ -25,5 +25,5 @@ Case View
 4. display it properly on the front-end wall page
 
 
-![Heroku app link!](https://facg3-book.herokuapp.com/)
+![Heroku app link](https://facg3-book.herokuapp.com/)
 run locally on port 6060
